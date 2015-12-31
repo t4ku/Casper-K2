@@ -503,8 +503,8 @@ body.nav-opened .site-wrapper {
     position: relative;
     display: table;
     width: 100%;
-    height: 100vh;
-    margin-bottom: 5rem;
+    height: 50vh;
+    /*margin-bottom: 5rem;*/
     text-align: center;
     background: #222 no-repeat center center;
     background-size: cover;
@@ -524,6 +524,41 @@ body.nav-opened .site-wrapper {
 .main-nav a {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+}
+
+.content-nav {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.content-nav ul {
+    position: relative;
+    list-style-type: none;
+    float: left;
+    left: 50%;
+}
+
+.content-nav ul li {
+    position: relative;
+    float: left;
+    list-style-type: none;
+    float: left;
+    left: -50%;
+}
+
+.content-nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-content {
+}
+
+.top-content .fb-wrapper {
+    width: 400px;
+    height: 500px;
 }
 
 /* Navigation */
@@ -867,7 +902,7 @@ body.nav-opened .nav {
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
     margin: 10px 0 10px 0;
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: -1px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
@@ -921,6 +956,19 @@ body.nav-opened .nav {
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
+}
+
+.top-content {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: auto;
+}
+
+.top-content .fb-wrapper {
+}
+
+.top-content-box {
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
@@ -1606,6 +1654,14 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
+    .content-nav ul{
+      float: none;
+    }
+
+    .content-nav ul li {
+      float: none;
+    }
+
 
     blockquote {
         margin-left: 0;
@@ -1744,6 +1800,14 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+
+    .content-nav ul{
+      float: none;
+    }
+
+    .content-nav ul li {
+      float: none;
+    }
 
     .main-header {
         margin-bottom: 15px;

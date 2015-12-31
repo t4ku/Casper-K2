@@ -15,6 +15,14 @@
     </nav>
 </header>
 
+<nav class="content-nav" >
+  <ul>
+    {{#each @blog.navigation}}
+      <li><a href="{{this.url}}">{{label}}</a></li>
+    {{/each}}
+  </ul>
+</nav>
+
 <main class="content" role="main">
     <article class="{{post_class}}">
 

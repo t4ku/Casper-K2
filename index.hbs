@@ -18,10 +18,33 @@
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
+<nav class="content-nav" >
+  <ul>
+    {{#each @blog.navigation}}
+      <li><a href="{{this.url}}">{{label}}</a></li>
+    {{/each}}
+  </ul>
+</nav>
+
 {{! The main content area on the homepage }}
 <main id="content" class="content" role="main">
 
-    {{! The tag below includes the post loop - partials/loop.hbs }}
-    {{> "loop"}}
-
+    <div class="top-content clearfix">
+      <article class="top-content-message">
+        <p>
+          食べものをきちんときただくことは、農業を育み環境を守っていくことです。きちんときほんでは、料理講習会、ベランダオーガニック講座、グリーンツーリズムなどを通じて食と農業と環境のつながりを実践しています。
+        </p>
+      </article>
+      <div class="fb-wrapper">
+        <div class="fb-page" 
+          data-href="https://www.facebook.com/Npo%E8%87%AA%E7%84%B6%E6%B4%BE%E9%A3%9F%E8%82%B2%E3%81%8D%E3%81%A1%E3%82%93%E3%81%A8%E3%81%8D%E3%81%BB%E3%82%93-407107736043730/" 
+          data-tabs="timeline,events,messages" 
+          data-small-header="false" 
+          data-width="400"
+          data-height="500"
+          data-adapt-container-width="true" 
+          data-hide-cover="false" 
+          data-show-facepile="true"></div>
+      </div>
+    </div>
 </main>
