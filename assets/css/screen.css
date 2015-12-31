@@ -553,14 +553,6 @@ body.nav-opened .site-wrapper {
     font-family: 'Open Sans', sans-serif;
 }
 
-.top-content {
-}
-
-.top-content .fb-wrapper {
-    width: 400px;
-    height: 500px;
-}
-
 /* Navigation */
 body.nav-opened .nav-cover {
     position: fixed;
@@ -959,17 +951,53 @@ body.nav-opened .nav {
 }
 
 .top-content {
+}
+
+.top-content-message {
     position: relative;
     width: 80%;
     max-width: 710px;
     margin: auto;
 }
 
-.top-content .fb-wrapper {
+.top-content-widgets {
+    background: #3e3e3e;
+    min-height: 520px;
 }
 
-.top-content-box {
+.top-content .fb-wrapper {
+    float: left;
+    margin: 4rem;
 }
+
+/* remove default top margin */
+.top-content .fb-wrapper iframe {
+    margin: 0px;
+}
+
+.top-content .top-content-gallary {
+    float: left;
+    margin: 4rem;
+    max-width: 800px;
+}
+
+.top-content .top-content-gallary-grid {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.top-content .top-content-gallary-grid span {
+    color: #dedede;
+    vertical-align: bottom;
+}
+
+.top-content .top-content-gallary img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
