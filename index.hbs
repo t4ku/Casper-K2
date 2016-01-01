@@ -29,11 +29,25 @@
 <main id="content" class="content" role="main">
 
     <div class="top-content">
-      <article class="top-content-message">
+      <article class="top-content-section">
         <p>
           {{@blog.description}}
         </p>
       </article>
+
+      <article class="top-content-section">
+        <header>
+          <h2>お知らせ</h2>
+        </header>
+        {{#get "posts" filter="tag:info" order="published_at desc"}}
+          <ul>
+          {{#foreach posts}}
+            <li><a href="{{url}}">{{title}}</a>({{date published_at format="YYYY/MM/DD"}}更新)</li>
+          {{/foreach}}
+          </ul>
+        {{/get}}
+      </article>
+
       <div class="top-content-widgets-wrapper">
         <div class="top-content-widgets clearfix">
           <div class="fb-wrapper">
@@ -74,4 +88,5 @@
         </div>
       </div>
     </div>
+
 </main>
