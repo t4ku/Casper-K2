@@ -960,14 +960,19 @@ body.nav-opened .nav {
     margin: auto;
 }
 
-.top-content-widgets {
+.top-content-widgets-wrapper {
     background: #3e3e3e;
     min-height: 520px;
 }
 
+.top-content-widgets {
+    width: 90%;
+    margin: auto;
+}
+
 .top-content .fb-wrapper {
     float: left;
-    margin: 4rem;
+    padding: 10px;
 }
 
 /* remove default top margin */
@@ -977,7 +982,7 @@ body.nav-opened .nav {
 
 .top-content .top-content-gallary {
     float: left;
-    margin: 4rem;
+    margin: 2rem;
     max-width: 800px;
 }
 
